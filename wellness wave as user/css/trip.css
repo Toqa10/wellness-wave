@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(#4685855f, #9ed1d17b), url();
+}
+h1 {
+  color: #183d3d;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.small {
+  width: 30%;
+  margin: 20px;
+}
+.image-container {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(#2d96968d, #9ed1d17b), url(../img/caption.jpg);
+  background-size: cover;
+  position: relative;
+}
+.image-container h2 {
+  width: 300px;
+  height: 75px;
+  top: 70%;
+  left: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #7ecdcd9e;
+  background-color: #183d3d;
+}
+.image-container h2:hover {
+  background-color: #468585;
+  color: #183d3d;
+}
+.Search {
+  text-align: center;
+  color: #183d3d;
+}
+.filter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  margin-left: 5px;
+  color: #183d3d;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  background-color: #183d3d;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  height: 45px;
+  width: 100px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: tomato;
+  text-decoration: underline;
+  cursor: pointer;
+}
+h1 {
+  color: #183d3d;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+.card img {
+  border-radius: 3px;
+  width: 100%;
+  height: 300px;
+}
+.card h2 {
+  text-align: center;
+  color: #183d3d;
+}
+.card p {
+  padding-top: 2px;
+  color: #183d3d;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+/* TICKER TAPE */
+.shopnow {
+  width: 300%;
+  background-color: #183d3d;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  color: #468585;
+  padding: 15px;
+  position: relative;
+  flex-shrink: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .small {
+    width: 70%;
+  }
+}
+
+@media (max-width: 870px) {
+  .shopnow {
+    width: 780%;
+  }
+}

@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(#4685855f, #9ed1d17b), url();
+}
+
+/* SLIDES STYLING START */
+
+.carousel-inner img {
+  height: 90vh;
+}
+
+.section1,
+.section2,
+.section3 {
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px;
+  padding: 30px;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section1 img {
+  height: 270px;
+  width: 270px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.section1 img:hover {
+  transform: scale(1.1);
+}
+
+video {
+  transition: transform 0.5s;
+  height: 350px;
+  width: 450px;
+}
+
+video:hover {
+  transform: scale(1.1);
+}
+
+.section3 img {
+  border-radius: 10px;
+  transition: transform 0.5s;
+  height: 300px;
+  width: 450px;
+}
+
+.section3 img:hover {
+  transform: scale(1.1);
+}
+
+.section4 {
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* SLIDES STYLING END */
+
+/* SHOP NOW CARDS STYLING */
+.dr {
+  margin-top: 10px;
+  border-radius: 55%;
+}
+
+.cards {
+  color: #fff;
+  background-color: #042931;
+  width: 280px;
+  height: 350px;
+  border-radius: 15px;
+  display: list-item;
+  text-align: center;
+  margin: 25px;
+}
+
+p {
+  color: #fff;
+  display: inline;
+  margin-inline: 3px;
+}
+
+.product-name-price {
+  justify-content: space-between;
+  align-content: space-between;
+  display: flex;
+  margin: 3px 8px;
+}
+
+/* BUTTON STYLING */
+button {
+  margin-bottom: 9px;
+}
+
+.btn3 {
+  margin: 4px;
+  background-color: #9ed1d17b;
+  color: white;
+  border-radius: 7px;
+  width: 245px;
+  height: 35px;
+}
+.btn3 a{
+  text-decoration: none;
+  color: white;
+}
+.btn3:hover{
+  background-color: tomato;
+  text-decoration: underline;
+}
+
+button:hover {
+  color: #042931;
+  text-decoration: none;
+  background-color: #aeffff;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+h1 {
+  color: #042931;
+}
+
+/* P SLIDES STYLING */
+.desc {
+  color: #042931;
+}
+
+/* H1 SHOP NOW STYLING */
+.shop {
+  text-align: center;
+}
+
+.up {
+  color: white;
+  background-color: red;
+  position: fixed;
+  bottom: 45px;
+  right: -70px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  text-align: center;
+  transition: 0.3s;
+}
+.up.show {
+  right: 30px;
+}
+/*************************************************************/
+/* RESPONSIVE CODES */
+
+@media screen and (max-width: 768px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .desc {
+    display: none;
+  }
+}

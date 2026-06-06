@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.up {
+  color: white;
+  background-color: red;
+  position: fixed;
+  bottom: 45px;
+  right: -70px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  height: 35px;
+  cursor: pointer;
+  width: 35px;
+  text-align: center;
+  transition: 0.3s;
+}
+.up.show {
+  right: 30px;
+}
