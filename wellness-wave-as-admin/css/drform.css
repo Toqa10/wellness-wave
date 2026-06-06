@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  color: #ebf4f6;
+}
+
+body {
+  background: linear-gradient(to bottom right, #143b519d, #2b5858b7),
+    url(download.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FORM STYLING START */
+
+form {
+  background-color: rgba(255, 255, 255, 0.475);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input,
+select {
+  color: #143b51;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  flex-grow: 1;
+  border-bottom: 0.5px solid #143b51;
+  border-left: 0.5px solid #143b51;
+}
+
+div {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+.title {
+  width: 110px;
+  margin: 3px;
+}
+
+.main-form {
+  margin: 25px;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  color: #143b51;
+}
+
+.lab {
+  color: #143b51;
+  padding: 5px;
+}
+
+.btn button {
+  width: 100%;
+  height: 45px;
+  background: #143b51;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ebf4f6;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 10px 0px;
+  font-size: large;
+}
+
+button:hover {
+  color: #ebf4f6;
+  text-decoration: underline;
+  background-color: #143b51;
+}
+/* SIGN UP BUTTON STYLING START */
+
+::placeholder {
+  padding: 5px;
+  color: #143b51;
+}
+
+i {
+  padding: 3px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #143b51;
+}
+
+option {
+  background-color: #143b5165;
+  color: #143b51;
+}
+h1 {
+
+  text-align: center;
+  color: #143b51;
+  margin: 20px;
+}
+/* FORM STYLING END */
+
+/* RESPONSIVE CODES */
+
+@media screen and (max-width: 768px) {
+  form {
+    margin-top: 25px;
+  }
+
+  .test {
+    display: block;
+    margin: 10px;
+  }
+  .title {
+    width: 100px;
+  }
+  input,
+  select {
+    width: 180px;
+  }
+}

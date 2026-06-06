@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  color: #ebf4f6;
+}
+
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(#4685858a, #9ed1d17b),
+    url(pexels-photo-263402.webp);
+}
+
+/* FORM STYLING START */
+
+form {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  margin-bottom: 10px;
+  max-width: 600px;
+  padding: 15px;
+  border-radius: 15px;
+  border: #468585;
+}
+
+input,
+select {
+  color: #183d3d;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+}
+
+/* SIGNUP DIV STYLING */
+div {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+.title {
+  width: 110px;
+  margin: 3px;
+}
+
+.sign {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  color: #183d3d;
+}
+
+.lab {
+  color: #183d3d;
+  padding: 5px;
+}
+
+/* SIGN UP BUTTON STYLING START */
+.btn {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn button {
+  width: 100%;
+  height: 45px;
+  background: #183d3d;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #ebf4f6;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 10px 0px;
+  font-size: large;
+}
+
+button:hover {
+  color: #ebf4f6;
+  text-decoration: underline;
+  background-color: #183d3d;
+}
+
+/* SIGN UP LINK STYLING START */
+
+::placeholder {
+  padding: 5px;
+  color: #183d3d;
+}
+
+.space {
+  padding-left: 5px;
+}
+
+.last {
+  color: white;
+  font-weight: 200;
+}
+/* SIGN UP BUTTON STYLING END */
+
+/* LOGIN LINK STYLING */
+.login-link {
+  color: #183d3d;
+  text-align: center;
+}
+
+/* ICONS STYLING */
+i {
+  padding: 3px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #183d3d;
+}
+
+.last:hover {
+  color: blue;
+}
+
+option {
+  background-color: #183d3d65;
+  color: #183d3d;
+}
+
+/* FORM STYLING END */
+
+/* RESPONSIVE CODES */
+
+@media screen and (max-width: 768px) {
+  form {
+    margin-top: 25px;
+  }
+
+  .test {
+    display: block;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #003c43;
+}
+
+/* SIDE NAV STYLING */
+.side-nav {
+  display: flex;
+  background-color: rgb(20, 59, 81);
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  top: 0;
+  left: 0;
+}
+
+/* HOME BUTTON STYLING */
+.btn-primary {
+  background-color: #d4e6ed;
+  color: #003c43 !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 255, 0.735) !important;
+  color: white !important;
+  transition-duration: 0.2s;
+}
+
+/* SIDE NAV ANCHORS STYLING START */
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.side-nav ul li a {
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s;
+}
+
+.side-nav ul li a:hover {
+  color: rgb(20, 59, 81);
+  background-color: #d4e6ed;
+}
+
+.danger {
+  background-color: tomato;
+}
+
+/* SIDE NAV ANCHORS STYLING END */
+
+/* MAIN DIV STYLING */
+.main {
+  width: 80%;
+  min-height: 100vh;
+  position: absolute;
+  left: 20%;
+}
+
+/* NAV BAR STYLING */
+.navbar {
+  background-color: #054c5477 !important;
+  color: #003c43 !important;
+}
+
+.close-nav {
+  width: 100%;
+  left: 0;
+}
+
+
+/************************************************************/
+/* TABLES STYLING START */
+
+/* TABLE DIV */
+.content {
+  overflow-x: scroll;
+}
+
+.btn {
+  transition: 0.4s !important;
+}
+
+.btn:hover {
+  background-color: white !important;
+  color: #003c43 !important;
+}
+
+/* DELETE BUTTON */
+.one {
+  background-color: red;
+  padding: 7px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.one:hover {
+  background-color: white;
+  border: solid red;
+  color: #003c43;
+}
+
+/* TABLE NAME */
+h2 {
+  margin: 10px;
+}
+
+.nav-link {
+  transition: 0.2s;
+  color: white !important;
+}
+
+.nav-link:hover {
+  padding-left: 10px;
+  background-color: #003c4374;
+  text-decoration: underline;
+  border-radius: 7px;
+}
+
+.navbar-brand {
+  color: #003c43 !important;
+  font-weight: bold;
+}
+
+/* TO UP BUTTON */
+.up {
+  background-color: white;
+  position: fixed;
+  bottom: 45px;
+  right: -70px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.up.show {
+  right: 30px;
+}
+
+/********************************************************/
+/* RESPONSIVE CODES */
+@media (max-width: 700px) {
+  .side-nav {
+    display: none;
+  }
+
+  #toggleBtn {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    left: 0;
+  }
+}

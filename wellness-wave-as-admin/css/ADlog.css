@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  color: white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to top left ,#0c3333bf, #9ed1d195);
+}
+
+.card {
+  width: 420px;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  color: #183d3d;
+  border-radius: 10px;
+  padding: 40px 40px;
+  display: inline-block;
+}
+
+.card h1 {
+  color: #183d3d;
+  font-size: 36px;
+  text-align: center;
+}
+
+.card .box {
+  border-bottom: 1px solid #183d3d;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+/* USERNAME AND PASSWORD STYLING START */
+.box input {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  background: transparent;
+  outline: none;
+  color: #183d3d;
+  border: none;
+}
+
+.box input::placeholder {
+  color: #183d3d;
+}
+
+.box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+/* USERNAME AND PASSWORD STYLING START */
+
+/* CHECKBOX STYLING */
+.card .check {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 10px 10px;
+  margin-bottom: 25px;
+}
+
+.check label input {
+  accent-color: #183d3d;
+  text-decoration: none;
+}
+
+/* LOGIN BUTTON STYLING START */
+.card .btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 600;
+  background: #183d3d;
+  border: none;
+  outline: none;
+  color: #ebf4f6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card .btn a {
+  color: #ebf4f6;
+  text-decoration: none;
+}
+
+.card .btn a:hover {
+  text-decoration: underline;
+  color: #ebf4f6;
+}
+/* LOGIN BUTTON STYLING END */
+
+/* ICONS STYLING */
+i {
+  font-size: large;
+  color: #183d3d;
+  padding: 5px;
+}
+
+.check label {
+  color: #183d3d;
+}
